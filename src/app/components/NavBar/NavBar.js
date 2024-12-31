@@ -12,11 +12,19 @@ const NavBar = () => {
             SIF
           </h2>
         </div>
-        <ul className="flex gap-2">
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
+        <ul className="flex gap-7">
+          <li className="text-[17px] font-semibold pb-2 text-transparent bg-gradient-to-r from-[#1A5685] to-[#63c7ee] bg-clip-text hover:scale-105 hover:border-gradient-to-r hover:from-[#63c7ee] hover:to-[#1A5685] transition-transform duration-300 transform-origin-center">
+            Home
+          </li>
+          <li className="text-[17px] font-semibold pb-2 text-transparent bg-gradient-to-r from-[#1A5685] to-[#63c7ee] bg-clip-text hover:scale-105 hover:border-gradient-to-r hover:from-[#63c7ee] hover:to-[#1A5685] transition-transform duration-300 transform-origin-center">
+            About
+          </li>
+          <li className="text-[17px] font-semibold pb-2 text-transparent bg-gradient-to-r from-[#1A5685] to-[#63c7ee] bg-clip-text hover:scale-105 hover:border-gradient-to-r hover:from-[#63c7ee] hover:to-[#1A5685] transition-transform duration-300 transform-origin-center">
+            Skills
+          </li>
+          <li className="text-[17px] font-semibold pb-2 text-transparent bg-gradient-to-r from-[#1A5685] to-[#63c7ee] bg-clip-text hover:scale-105 hover:border-gradient-to-r hover:from-[#63c7ee] hover:to-[#1A5685] transition-transform duration-300 transform-origin-center">
+            Projects
+          </li>
         </ul>
       </div>
     </div>
