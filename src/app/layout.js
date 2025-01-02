@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${roboto.variable} antialiased`}>
-        <div className="max-w-screen-lg mx-auto">
+        <div className=" ">
           <NavBar></NavBar>
           {children}
         </div>
