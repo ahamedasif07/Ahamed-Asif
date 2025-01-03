@@ -1,34 +1,31 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import asifImage from "../../../../public/assets/asif12_image-.png";
-import Bubbles from "../Bubbles";
+import asifImage from "../../../../public/assets/asif13_image-.png";
 
 const Hero = () => {
   return (
     <div className="relative hero">
       {/* Bubbles Component */}
-      <Bubbles />
 
       {/* Hero Content */}
       <section className="py-8 content">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="flex justify-between items-center">
+          <div className="md:flex justify-between items-center">
             {/* Left Section: Text */}
-            <div className="w-1/2 pl-[230px] text-center lg:text-left">
+            <div className="md:w-1/2 md:mt-[120px] md:pl-[230px] text-center lg:text-left">
               <h1 className="text-4xl lg:text-5xl font-bold text-[#1A4576]">
                 Hi, I'm Asif Hosen
               </h1>
-              <h1 className="text-4xl pt-4 mr-7 lg:text-5xl font-bold text-gray-800">
-                <a href="https://git.io/typing-svg">
+              <h1 className="text-4xl pt-4 ml-[50px]   md:ml-[0px] lg:text-5xl font-bold text-gray-800">
+                <a className="" href="https://git.io/typing-svg">
                   <img
                     src="https://readme-typing-svg.demolab.com?font=Roboto&weight=900&size=46&pause=1000&color=2563EB&width=491&height=66&lines=+Front-End+Developer"
                     alt="Typing SVG"
                   />
                 </a>
               </h1>
-
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 px-4 md:px-0 text-lg leading-relaxed">
                 Let's collaborate to turn your vision into a stunning web
                 application that stands out!
               </p>
@@ -49,15 +46,17 @@ const Hero = () => {
             </div>
 
             {/* Right Section: Image */}
-            <div className="flex w-1/2 justify-end mt-10 lg:mt-0 relative">
-              <div className="absolute inset-0 mt-[220px] mr-[26px] flex justify-center items-center">
-                <div className="w-[370px] h-[370px] rounded-full bg-[#275298] animate-pulseLight"></div>
+            <div className="flex md:w-1/2 justify-center mt-10 lg:mt-0 relative">
+              <div className="absolute inset-0 mt-[130px] md:mr-[26px] flex justify-center items-center">
+                <div className="md:w-[300px] w-[250px] mt-[170px] md:mt-[200px] md:ml-[20px] h-[250px] md:h-[300px] rounded-full bg-[#275298] animate-pulseLight"></div>
               </div>
-              <Image
-                src={asifImage}
-                alt="Asif Hosen"
-                className="relative z-10 rounded-lg shadow-lg"
-              />
+              <div className="md:w-[450px] w-[350px] h-[350px] md:h-[450px]">
+                <Image
+                  src={asifImage}
+                  alt="Asif Hosen"
+                  className="relative z-10 md:ml-[0px] mt-[40px]  rounded-lg "
+                />
+              </div>
             </div>
 
             <style jsx>
