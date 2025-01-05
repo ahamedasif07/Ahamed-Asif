@@ -32,7 +32,7 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          {/* mini menu items */}
+          {/* mini menu item */}
           {/* <div
             className={`absolute ${
               togolMenu ? "block" : "hidden"
