@@ -32,8 +32,8 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          {/* mini menu item */}
-          {/* <div
+          {/*   mini menu item */}
+          <div
             className={`absolute ${
               togolMenu ? "block" : "hidden"
             } top-[58px] right-[35px] z-[1000] py-4 px-20 bg-black rounded-sm shadow-xl transform transition-all duration-500 ease-in-out ${
@@ -58,7 +58,7 @@ const NavBar = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
 
           <div
             onClick={() => setTogolMenu(!togolMenu)}
