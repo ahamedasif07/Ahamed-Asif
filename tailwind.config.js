@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -21,6 +22,28 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        liberty: ["Liberty", "sans-serif"],
+      },
+      keyframes: {
+        flicker: {
+          "0%, 5%, 6.5%, 8%, 100%": {
+            opacity: "1",
+            transform: "translate(-0.2rem, 1rem) rotate(10deg)",
+          },
+          "5.5%, 7%": {
+            opacity: "0",
+            transform: "translate(-0.2rem, 1rem) rotate(10deg)",
+          },
+          "50%": {
+            opacity: "1",
+            transform: "translate(-0.2rem, 1rem) rotate(13deg)",
+          },
+        },
+      },
+      animation: {
+        flicker: "flicker 2s ease-in-out infinite alternate",
       },
     },
   },

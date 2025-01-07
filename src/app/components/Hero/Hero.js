@@ -20,7 +20,7 @@ const Hero = () => {
               </h1>
               <h1 className="text-4xl pt-4  mx-auto text-center md:ml-0 lg:ml-0 lg:text-5xl font-bold text-gray-800">
                 <a
-                  className="flex justify-center"
+                  className="flex justify-center md:justify-start"
                   href="https://git.io/typing-svg"
                 >
                   <img
