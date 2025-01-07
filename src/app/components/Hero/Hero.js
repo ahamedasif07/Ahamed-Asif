@@ -18,7 +18,7 @@ const Hero = () => {
               <h1 className="text-4xl lg:text-5xl font-bold text-[#1A4576]">
                 Hi, I'm Asif Hosen
               </h1>
-              <h1 className="text-4xl pt-4 border-2 border-red-600  mx-auto text-center md:ml-0 lg:ml-0 lg:text-5xl font-bold text-gray-800">
+              <h1 className="text-4xl pt-4  mx-auto text-center md:ml-0 lg:ml-0 lg:text-5xl font-bold text-gray-800">
                 <a
                   className="flex justify-center"
                   href="https://git.io/typing-svg"
