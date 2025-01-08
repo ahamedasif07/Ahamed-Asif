@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <div>
       <Hero></Hero>
-      <SectionTitle></SectionTitle>
+      <div className="mt-[180px] flex justify-center">
+        <SectionTitle title="About Me"></SectionTitle>
+      </div>
     </div>
   );
 }

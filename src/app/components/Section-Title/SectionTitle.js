@@ -1,19 +1,11 @@
-// components/NeonText.js
 import React from "react";
-import "./sectionTitle.module.css"; // Custom styles
+import styles from "./sectionTitle.module.css";
 
 const SectionTitle = () => {
   return (
-    <div className="w-full  bg-[#1b2431] pt-[70px] flex items-center justify-center">
-      <h1 className="flex font-liberty font-thin text-[7rem] tracking-[-0.25em]">
-        <span className="text-[#d9fdff] text-[70px] px-2 neon-shadow">A</span>
-        <span className="text-[#d9fdff] text-[70px] px-2 neon-shadow transform translate-x-[-0.2rem] translate-y-[1rem] rotate-10 animate-flicker">
-          B
-        </span>
-        <span className="text-[#d9fdff] text-[70px] px-2  neon-shadow">O</span>
-        <span className="text-[#d9fdff] text-[70px] px-2 neon-shadow">U</span>
-        <span className="text-[#d9fdff] text-[70px] px-2 neon-shadow">T</span>
-      </h1>
+    <div className={styles.main}>
+      <h2 className={styles.first}>ABOUT ME</h2>
+      <h2 className={styles.second}>ABOUT ME</h2>
     </div>
   );
 };
